@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <img src="/assets/netflixLogo.png" alt="netflixLogo" />
+        <div class="headOptions">
+          <div class="selectLang">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px">
+              <image
+                href="/assets/9035414_language_outline_icon.svg"
+                height="20px"
+                width="20px"
+              />
+            </svg>
+            <select name="Select Language" id="selectLanguage">
+              <option value="English" label="English">English</option>
+              <option value="Hindi" label="हिंदी">Hindi</option>
+            </select>
+          </div>
+          <button id="btnSignIn">Sign In</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="bg">
+        <div class="bgEffect">
+          <div class="heroContent">
+            <h1>Unlimited movies, TV shows and more</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <div class="hero-faqForm">
+              <form>
+                <h3>
+                  Ready to watch? Enter your email to create or restart your
+                  membership.
+                </h3>
+                <div class="hero-inputbutton">
+                  <input type="text" placeholder="Email address" />
+                  <button>Get Started</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+
+      <!-- Panel 1 -->
+      <div class="featureContainer">
+        <div class="featureContent">
+          <div class="featureText">
+            <h2>Enjoy on your TV</h2>
+            <p>
+              Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+              Blu-ray players and more.
+            </p>
+          </div>
+          <div class="featureDisplay">
+            <img src="assets/tv.png" alt="tv" />
+            <video
+              src="assets/video-tv-in.m4v"
+              autoplay
+              playsinline
+              loop
+              muted
+            ></video>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+
+      <!-- Panel 2 -->
+      <div class="featureContainer">
+        <div class="featureContent">
+          <div class="featureDisplay" id="featureDisplayPanel2">
+            <img src="assets/mobile.jpg" alt="mobile" />
+            <div class="downloadBox">
+              <div class="downloadBoxShot">
+                <img src="assets/boxshot.png" alt="movie poster" />
+              </div>
+              <div class="boxShotContent">
+                <div class="boxShotName">Stranger Things</div>
+                <div class="downloading">Downloading...</div>
+              </div>
+              <div class="downloadAnimateImg"></div>
+            </div>
+          </div>
+          <div class="featureText">
+            <h2>Download your shows to watch offline</h2>
+            <p>
+              Save your favourites easily and always have something to watch.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+
+      <!-- Panel 3 -->
+      <div class="featureContainer">
+        <div class="featureContent">
+          <div class="featureText">
+            <h2>Watch everywhere</h2>
+            <p>
+              Stream unlimited movies and TV shows on your phone, tablet,
+              laptop, and TV.
+            </p>
+          </div>
+          <div class="featureDisplay" id="featureDisplayPanel3">
+            <img src="assets/device-pile-in.png" alt="devices" />
+            <video
+              src="assets/video-devices-in.m4v"
+              autoplay
+              playsinline
+              loop
+              muted
+            ></video>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+
+      <!-- Panel 4 -->
+      <div class="featureContainer">
+        <div class="featureContent">
+          <div class="featureDisplay" id="featureDisplayPanel4">
+            <img src="assets/children.png" alt="tv" />
+          </div>
+          <div class="featureText">
+            <h2>Create profiles for kids</h2>
+            <p>
+              Send children on adventures with their favourite characters in a
+              space made just for them—free with your membership.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+
+      <!-- FAQ -->
+      <div class="faqContainer">
+        <div class="faqContainer2">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faqsContainer">
+            <ul>
+              <li>
+                <div class="faqsContent">
+                  <h3>What is Netflix?</h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="3rem"
+                    width="3rem"
+                  >
+                    <image
+                      href="/assets/172525_plus_icon.svg"
+                      height="3rem"
+                      width="3rem"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <li>
+                <div class="faqsContent">
+                  <h3>How much does Netflix cost?</h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="3rem"
+                    width="3rem"
+                  >
+                    <image
+                      href="/assets/172525_plus_icon.svg"
+                      height="3rem"
+                      width="3rem"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <li>
+                <div class="faqsContent">
+                  <h3>Where can i watch?</h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="3rem"
+                    width="3rem"
+                  >
+                    <image
+                      href="/assets/172525_plus_icon.svg"
+                      height="3rem"
+                      width="3rem"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <li>
+                <div class="faqsContent">
+                  <h3>How do i cancel?</h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="3rem"
+                    width="3rem"
+                  >
+                    <image
+                      href="/assets/172525_plus_icon.svg"
+                      height="3rem"
+                      width="3rem"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <li>
+                <div class="faqsContent">
+                  <h3>What can i watch on Netflix?</h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="3rem"
+                    width="3rem"
+                  >
+                    <image
+                      href="/assets/172525_plus_icon.svg"
+                      height="3rem"
+                      width="3rem"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <li>
+                <div class="faqsContent">
+                  <h3>Is Netflix good for kids?</h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="3rem"
+                    width="3rem"
+                  >
+                    <image
+                      href="/assets/172525_plus_icon.svg"
+                      height="3rem"
+                      width="3rem"
+                    />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-faqForm">
+            <form>
+              <h3>
+                Ready to watch? Enter your email to create or restart your
+                membership.
+              </h3>
+              <div class="hero-inputbutton">
+                <input type="text" placeholder="Email address" />
+                <button>Get Started</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footerContainer">
+        <div class="footerQues">
+          "Questions? Call " <a href="#">000-800-919-1694</a>
+        </div>
+        <div class="footerAnchorsContainer">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Media Centre</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Ways to Watch</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Contatc Us</a></li>
+            <li><a href="#">Speed Test</a></li>
+            <li><a href="#">Legal Notices</a></li>
+            <li><a href="#">Only on Netflix</a></li>
+          </ul>
+        </div>
+        <div class="footerLangSelectContainer">
+          <div class="selectLang footerSelectLang">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px">
+              <image
+                href="/assets/9035414_language_outline_icon.svg"
+                height="20px"
+                width="20px"
+              />
+            </svg>
+            <select name="Select Language" id="selectLanguage">
+              <option value="English" label="English">English</option>
+              <option value="Hindi" label="हिंदी">Hindi</option>
+            </select>
+          </div>
+        </div>
+        <div class="footerCompnayNameContainer">
+          <div class="footerCompanyName">Netflix India</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

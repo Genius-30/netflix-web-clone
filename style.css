@@ -1,0 +1,793 @@
+@font-face {
+  font-family: netflixBold;
+  src: url(assets/fonts/netflixSans-Bold.otf);
+}
+
+@font-face {
+  font-family: netflixMedium;
+  src: url(assets/fonts/netflixSans-Medium.otf);
+}
+
+@font-face {
+  font-family: netflixRegular;
+  src: url(assets/fonts/netflixSans-Regular.otf);
+}
+
+@font-face {
+  font-family: netflixLight;
+  src: url(assets/fonts/netflixSans-Light.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: netflixRegular;
+  font-weight: normal;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  background: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 1.1rem;
+  z-index: 10;
+}
+
+.header {
+  height: 46px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  height: 50px;
+}
+
+.headOptions {
+  height: 46px;
+  width: 60%;
+  padding: 6px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectLang {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: fit-content;
+  border: 0.1px solid rgba(128, 128, 128, 0.7);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin-left: auto;
+  margin-right: 0.85rem;
+  display: flex;
+  align-items: center;
+}
+
+#selectLanguage {
+  font-family: netflixRegular;
+  font-weight: normal;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+}
+
+#btnSignIn {
+  height: auto;
+  width: 80px;
+  background-color: rgb(229, 9, 20);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: netflixRegular;
+  font-weight: normal;
+}
+
+/* Main */
+.bg {
+  height: 95vh;
+  width: 100%;
+  background-image: url(assets/bg2.jpg);
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.bgEffect {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: brightness(35%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7.5rem 0 2rem;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1.5rem;
+  gap: 1rem;
+}
+
+.heroContent h1 {
+  font-family: netflixBold;
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+
+.heroContent p {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.hero-faqForm {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-faqForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-faqForm h3 {
+  font-weight: normal;
+  text-align: center;
+}
+
+.hero-inputbutton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin: 1rem 110px 0 110px;
+}
+
+.hero-inputbutton input {
+  height: 3.5rem;
+  width: 100%;
+  background-color: rgba(22, 22, 22, 0.7);
+  font-size: 1rem;
+  border: 0.1px solid rgba(128, 128, 128, 0.7);
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  font-weight: normal;
+  padding: 0.5rem 1rem;
+}
+
+.hero-inputbutton button {
+  display: block flex;
+  align-items: center;
+  white-space: nowrap;
+  height: 3.5rem;
+  background-color: rgb(229, 9, 20);
+  border-radius: 4px;
+  border: none;
+  font-size: 1.5rem;
+  font-family: netflixMedium;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+}
+
+.divider {
+  height: 0.5rem;
+  width: 100%;
+  background-color: rgb(35, 35, 35);
+  bottom: -0.5rem;
+}
+
+.featureContainer {
+  height: 575px;
+  width: 100%;
+  background-color: black;
+  padding: 3.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featureContent {
+  height: 100%;
+  width: 100%;
+  margin: 0px 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.featureText {
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.featureText h2 {
+  font-family: netflixBold;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.featureText p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.featureDisplay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 1rem;
+  flex-basis: 50%;
+}
+
+.featureDisplay img {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.featureDisplay video {
+  z-index: 1;
+  width: 74%;
+  position: absolute;
+  overflow: hidden;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#featureDisplayPanel2 {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+.downloadBox {
+  height: 6.25rem;
+  width: 55%;
+  z-index: 2;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  background: rgb(0, 0, 0);
+  min-width: 15rem;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+  border-radius: 0.75rem;
+  display: block flex;
+  align-items: center;
+}
+
+.downloadBoxShot {
+  position: relative;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: block flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.downloadBoxShot img {
+  position: relative;
+  height: 5rem;
+  width: auto;
+  display: block;
+  max-width: 100%;
+  border: 0;
+  transform: translateX(-50%);
+}
+
+.boxShotContent {
+  display: inline-block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0.3rem 0;
+  top: 0;
+  left: 0;
+  text-align: left;
+}
+
+.boxShotName {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: netflixMedium;
+}
+
+.downloading {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: netflixMedium;
+  color: #0071eb;
+  margin-top: 0.25rem;
+}
+
+.downloadAnimateImg{
+  position: relative;
+  background: url(assets/download-animation.gif);
+  background-size: 100%;
+  width: 3rem;
+  height: 3rem;
+  content: "";
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: block;
+}
+
+#featureDisplayPanel3 video {
+  top: 35%;
+  width: 65%;
+}
+
+#featureDisplayPanel4 {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+.faqContainer {
+  height: auto;
+  width: 100%;
+  padding: 2.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faqContainer2 h2 {
+  font-size: 3rem;
+  font-family: netflixBold;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.faqContainer2 {
+  height: auto;
+  width: 100%;
+  margin: 0 9.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.faqsContainer {
+  height: auto;
+  width: 100%;
+}
+
+.faqsContainer ul {
+  height: 100%;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.faqsContainer ul li {
+  display: list-item;
+  margin-bottom: 0.5rem;
+}
+
+.faqsContent {
+  height: 100%;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(45, 45, 45);
+  cursor: pointer;
+}
+
+.faqsContent:hover {
+  background-color: rgb(66, 66, 66);
+}
+
+.faqsContent h3 {
+  font-size: 1.5rem;
+  font-family: netflixRegular;
+  font-weight: 400;
+  text-align: left;
+}
+
+footer {
+  margin: 4.5rem 6.75rem;
+  padding: 0 2rem;
+}
+
+.footerContainer * {
+  font-family: netflixRegular;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffffb3;
+}
+
+.footerQues {
+  margin-bottom: 0.75rem;
+}
+
+.footerAnchorsContainer {
+  width: 100%;
+  margin: 0.75rem 0;
+}
+
+.footerAnchorsContainer ul {
+  width: calc(100% + 0.75rem);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 0.75rem;
+  margin-left: -0.75rem;
+}
+
+.footerAnchorsContainer ul li {
+  display: inline-flex;
+  margin: 1rem 0 0 0.75rem;
+  font-size: 14px;
+  flex: 0 0 calc(25% - 0.75rem);
+}
+
+.footerLangSelectContainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footerSelectLang {
+  margin: 0.5rem 0 0 0;
+}
+
+.footerCompanyName {
+  margin-top: 1.5rem;
+}
+
+.footerSelectLang #selectLanguage {
+  content-visibility: visible;
+}
+
+@media screen and (max-width: 1280px) {
+  .header {
+    width: 90%;
+  }
+
+  .downloadBox {
+    width: 60%;
+    height: 5.75rem;
+  }
+
+  .downloadBoxShot img{
+    height: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .featureContent {
+    margin: 0px 2rem;
+  }
+
+  .faqContainer2 {
+    margin: 0 2rem;
+  }
+
+  footer {
+    margin: 4.5rem 0;
+  }
+
+  .downloadBox{
+    bottom: 12%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header img {
+    height: 30px;
+  }
+
+  .bg {
+    height: 90vh;
+  }
+
+  .bgEffect {
+    padding: 9.875rem 0 4rem;
+  }
+
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+
+  .heroContent p,
+  .heroContent h3 {
+    font-size: 18px;
+  }
+
+  .hero-inputbutton {
+    margin: 1rem 0 0 0;
+  }
+
+  .featureContainer {
+    height: 800px;
+    padding: 4.5rem 0;
+  }
+
+  .featureText {
+    flex-basis: 0;
+  }
+
+  .featureText h2 {
+    font-size: 2rem;
+  }
+
+  .featureText p {
+    font-size: 18px;
+  }
+
+  .featureContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 6rem;
+  }
+
+  .featureDisplay {
+    margin: 1.5rem 0 0 0;
+    flex-grow: 1.5;
+  }
+
+  .featureDisplay img {
+    width: 100%;
+    height: auto;
+  }
+
+  .featureDisplay video {
+    width: 74%;
+  }
+
+  #featureDisplayPanel2 {
+    order: 1;
+    margin: 1rem 0 0 0;
+  }
+
+  .downloadBox {
+    padding: 0.35rem 0.75rem;
+    bottom: 8%;
+  }
+
+  .downloadBoxShot img{
+    height: 4rem;
+  }
+
+  #featureDisplayPanel4 {
+    order: 1;
+    margin: 1rem 0 0 0;
+  }
+
+  .faqContainer2 h2 {
+    font-size: 2rem;
+  }
+
+  .faqsContent h3 {
+    font-size: 1.25rem;
+  }
+
+  .faqsContent svg,
+  .faqsContent image {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  footer {
+    margin: 2rem 0;
+  }
+
+  .footerAnchorsContainer ul li {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .downloadBox{
+    bottom: 12%;
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bg {
+    height: 85vh;
+  }
+
+  .hero-faqForm {
+    padding: 0 1rem;
+  }
+
+  .hero-inputbutton {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .hero-inputbutton input,
+  .hero-inputbutton button {
+    height: 3rem;
+  }
+
+  .hero-inputbutton input {
+    margin: 0 0 1rem;
+  }
+
+  .hero-inputbutton button {
+    font-size: 1.2rem;
+  }
+
+  .featureContainer {
+    height: 85vh;
+    padding: 2rem 0;
+  }
+
+  .featureContent {
+    margin: 0 1.5rem;
+  }
+
+  .featureDisplay {
+    margin-top: 1rem;
+    flex-grow: 0;
+  }
+
+  .featureDisplay img {
+    width: 100%;
+    height: auto;
+  }
+
+  .featureDisplay video {
+    width: 74%;
+  }
+
+  .downloadBox {
+    height: 4.25rem;
+    bottom: 8%;
+  }
+
+  .downloadBoxShot img{
+    height: 3rem;
+  }
+
+  .boxShotName {
+    font-size: 0.875rem;
+  }
+
+  .downloading{
+    font-size: 0.75rem;
+  }
+
+  .selectLang {
+    height: 2rem;
+  }
+
+  #selectLanguage {
+    width: fit-content;
+    content-visibility: hidden;
+  }
+
+  #btnSignIn {
+    height: 2rem;
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
+
+  .faqContainer2 {
+    margin: 0 1rem;
+  }
+
+  .faqsContent {
+    padding: 1rem 1rem;
+  }
+
+  footer {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .featureContainer {
+    height: 80vh;
+    padding: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .header {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headOptions {
+    display: inline-flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .selectLang {
+    margin: 0;
+  }
+
+  #btnSignIn{
+    padding: 0 0.5rem;
+  }
+
+  .bg {
+    height: 100vh;
+  }
+
+  .downloadBox{
+    height: 3rem;
+    width: auto;
+  }
+
+  .downloadBoxShot img{
+    height: 2.75rem;
+  }
+
+  .boxShotName, .downloading{
+    margin: 0;
+    font-size: 0.75rem;
+  }
+
+  .downloadAnimateImg{
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .faqsContent h3 {
+    font-size: 0.75rem;
+  }
+
+  .faqsContent {
+    padding: 0.5rem;
+  }
+
+  .faqsContent svg,
+  .faqsContent image {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
